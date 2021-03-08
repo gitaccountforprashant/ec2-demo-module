@@ -6,7 +6,7 @@ provider "aws" {
 resource "aws_eip" "myip" {
     vpc = "true"
     tags = {
-      Name = "first-eip"
+      Name = var.name
       }
 }
 
